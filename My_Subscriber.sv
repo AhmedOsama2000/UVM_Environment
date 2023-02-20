@@ -6,7 +6,7 @@ class my_subscriber extends uvm_subscriber #(my_sequence_item);
 
 	// No need for creating the analysis export because it's in the uvm_subscriber itself
 
-	// No need for sampling synchronously with the clock, because write function samples synchronouslt
+	// No need for sampling synchronously with the clock, because write function samples synchronously
 	covergroup addr_cov_grp;
 
 		addr: coverpoint seq_item.addr {
