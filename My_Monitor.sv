@@ -61,9 +61,7 @@ class my_monitor extends uvm_monitor;
 				seq_item.rst_n <= vif.rst_n;
 			end
 
-			// call clone method to avoid any loss
-
-			$cast(temp_seq_item,seq_item); // ====> Clone is not working
+			$cast(temp_seq_item,seq_item);
 
 			$display("seq_item.data_in",seq_item.data_in);
 			$display("seq_item.data_out",seq_item.data_out);
